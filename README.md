@@ -1,16 +1,17 @@
-LinuxFr.org
+PiratesFr.org
 ===========
 
-LinuxFr.org is a french web site speaking of Linux and Free Software.
+PiratesFr.org is a french web site speaking of Linux and Free Software.
 
-This git repository is the rails application that run on LinuxFr.org.
+This git repository is the rails application that run on PiratesFr.org.
 
+It's been forked from the LinuxFr.org rails application
 
 Install
 -------
 
 The following instructions will help you to install the Rails part of
-LinuxFr.org on a Debian box.
+PiratesFr.org on a Debian box.
 
 1) First install some Debian packages:
 
@@ -19,15 +20,23 @@ LinuxFr.org on a Debian box.
     # aptitude install curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev
     # aptitude install libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev bison
     # aptitude install libxslt-dev autoconf libc6-dev ncurses-dev automake libtool
-    # aptitude install imagemagick hunspell hunspell-fr subversion
-    # aptitude install openjdk-6-jdk
+    # aptitude install imagemagick hunspell hunspell-fr  subversion
+    # aptitude install openjdk-6-jdk libhunspell-dev
 
-2) Configure the database:
+2) Configure the database: 
 
     # mysql -p -u root
     <enter your root password for mysql>
-    > CREATE DATABASE linuxfr_rails;
-    > GRANT ALL PRIVILEGES ON linuxfr_rails.* TO "linuxfr_rails"@"localhost";
+    > CREATE DATABASE piratesfr_rails;
+    > GRANT ALL PRIVILEGES ON piratesfr_rails.* TO "piratesfr_rails"@"localhost";
+    > CREATE DATABASE piratesfr_test;
+    > GRANT ALL PRIVILEGES ON piratesfr_test.* TO "piratesfr_rails"@"localhost";
+    > flush privileges;
+    > DROP DATABASE piratesfr_rails;
+    > DROP DATABASE piratesfr_test;
+    > use mysql
+    > update user set password=PASSWORD("NEW-PASSWORD-HERE") where User='piratesfr_rails"@"localhost';
+    > flush privileges;
     > QUIT;
     (return to user)
 
@@ -56,8 +65,8 @@ LinuxFr.org on a Debian box.
 
 6) Clone the repository, configure and install gems:
 
-    $ git clone git://github.com/nono/linuxfr.org.git
-    $ cd linuxfr.org
+    $ git clone git://github.com/nka11/piratesfr.org.git
+    $ cd piratesfr.org
     $ cp config/database.yml{.sample,}
     $ cp config/secret.yml{.sample,}
     $ gem install bundler rake
@@ -77,7 +86,7 @@ LinuxFr.org on a Debian box.
 * Get confirmation link in the console and confirm the account
 * Get password in the console
 * Give admin role to this account with
-  `mysql linuxfr_rails`
+  `mysql piratesfr_rails`
   `mysql> UPDATE accounts SET role='admin' WHERE login='xxxxxx';`
 * Reload the page on the site, you should be admin.
 
@@ -85,12 +94,12 @@ LinuxFr.org on a Debian box.
 See also
 --------
 
-If you want the full stack for running LinuxFr.org, you should also look at:
+If you want the full stack for running PiratesFr.org, you should also look at:
 
-* [The admin files](https://github.com/nono/admin-linuxfr.org)
-* [The board daemon](https://github.com/nono/board-sse-linuxfr.org)
-* [The share daemon](https://github.com/nono/share-LinuxFr.org)
-* [The migration script](https://github.com/nono/migration-linuxfr.org)
+* [The admin files](https://github.com/nka11/admin-piratesfr.org)
+-- in progress (not forked yet)
+* [The board daemon](https://github.com/nka11/board-sse-piratesfr.org)
+* [The share daemon](https://github.com/nka11/share-PiratesFr.org)
 
 
 How to run the specs
@@ -114,10 +123,11 @@ Copyheart
 
 The code is licensed as GNU AGPLv3. See the LICENSE file for the full license.
 
-The [default avatar](http://linuxfr.org/images/default-avatar.png) is a modified
+The [default avatar](http://piratesfr.org/images/default-avatar.png) is a modified
 [Tux](http://en.wikipedia.org/wiki/Tux).
 
 [Iconic icons](http://somerandomdude.com/projects/iconic/) are licenced
 [CC by-sa 3.0](http://creativecommons.org/licenses/by-sa/3.0/us/).
 
 ♡2011 by Bruno Michel. Copying is an act of love. Please copy and share.
+♡2012 by Nka11 & PolNetz for PirateFr adaptation. Copying is an act of love. Please copy and share.
