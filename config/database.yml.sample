@@ -1,8 +1,8 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: linuxfr_rails
-  username: linuxfr_rails
+  database: piratesfr_rails
+  username: piratesfr_rails
   password:
   reconnect: true
 
@@ -12,14 +12,14 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: linuxfr_test
-  username: linuxfr_test
+  database: piratesfr_test
+  username: piratesfr_test
   password:
 
 production:
   adapter: mysql2
   encoding: utf8
-  database: linuxfr_production
-  username: linuxfr
+  database: piratesfr_production
+  username: piratesfr
   password: XXX
   reconnect: true
