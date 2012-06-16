@@ -9,7 +9,7 @@ load 'deploy/assets'
 # Common options
 set :use_sudo,   false
 set :scm,        :git
-set :repository, "git://github.com/nono/linuxfr.org.git"
+set :repository, "git://github.com/nono/piratesfr.org.git"
 set :deploy_via, :remote_cache
 
 default_run_options[:pty] = true
@@ -30,14 +30,14 @@ namespace :env do
   desc "Production"
   task :prod do
     set :vserver,   "prod"
-    set :user,      "linuxfr"
+    set :user,      "piratesfr"
     set :branch,    "master"
     set :rails_env, :production
   end
 
   desc "[internal] Common stuff to alpha and production"
   task :common do
-    set :application, "#{vserver}.linuxfr.org"
+    set :application, "#{vserver}.piratesfr.org"
     set :deploy_to,   "/data/#{vserver}/#{user}/#{rails_env}"
     server "#{user}@#{application}", :app, :web, :db, :primary => true
     depend :remote, :file, "#{shared_path}/config/database.yml"

@@ -5,4 +5,4 @@ Disallow: /board
 Disallow: /compte
 Disallow: /redirect
 
-Sitemap: http://linuxfr.org/sitemap_index.xml.gz
+Sitemap: http://piratesfr.org/sitemap_index.xml.gz

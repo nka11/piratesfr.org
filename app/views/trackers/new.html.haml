@@ -4,12 +4,12 @@
   - if @preview_mode
     = render "preview", :preview => @tracker
   - else
-    = image_tag "/images/dessins/geekscottes_068.png", :alt => "Tu coderas pour moi !", :title => "Tu coderas pour moi ! - © Johann 'nojhan' Dréo : 2007-11-07 - Licence CC By-Sa 2.5"
+    = image_tag "http://linuxfr.org/images/dessins/geekscottes_068.png", :alt => "Tu coderas pour moi !", :title => "Tu coderas pour moi ! - © Johann 'nojhan' Dréo : 2007-11-07 - Licence CC By-Sa 2.5"
 
   .notice
     %strong Attention :
     les entrées du suivi sont publiques.
-    Pour les éventuelles failles de sécurité, nous préférerions que vous nous avertissiez au préalable en envoyant un courriel à &lt;moderateurs_@_linuxfr.org&gt;.
+    Pour les éventuelles failles de sécurité, nous préférerions que vous nous avertissiez au préalable en envoyant un courriel à &lt;moderateurs_@_piratesfr.org&gt;.
 
   = form_for @tracker do |form|
     = render form

@@ -1,5 +1,5 @@
 # encoding: utf-8
-namespace :linuxfr do
+namespace :piratesfr do
   desc "Daily crontab"
   task :daily => [
     :delete_avatars_cache,
