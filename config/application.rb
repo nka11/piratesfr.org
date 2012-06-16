@@ -30,7 +30,7 @@ module LinuxfrOrg
 
     config.filter_parameters += [:password, :password_confirmation]
 
-    COOKIE_STORE_KEY = 'linuxfr.org_session'
+    COOKIE_STORE_KEY = 'piratesfr.org_session'
     config.session_store :cookie_store, :key => COOKIE_STORE_KEY
 
     config.assets.enabled = true

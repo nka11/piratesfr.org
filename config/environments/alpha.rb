@@ -1,7 +1,7 @@
 # encoding: utf-8
-LinuxfrOrg::Application.configure do
+PiratesfrOrg::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
-  MY_DOMAIN = 'alpha.linuxfr.org'
+  MY_DOMAIN = 'alpha.piratesfr.org'
 
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
