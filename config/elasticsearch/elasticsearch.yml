@@ -1,4 +1,4 @@
-cluster.name: linuxfr_org
+cluster.name: piratesfr_org
 
 path.data: db/elasticsearch
 path.logs: log
