@@ -2,7 +2,7 @@
 # http://guides.rails.info/routing.html
 # http://yehudakatz.com/2009/12/26/the-rails-3-router-rack-it-up/
 #
-LinuxfrOrg::Application.routes.draw do
+PiratesfrOrg::Application.routes.draw do
   root :to => "home#index"
 
   # News

@@ -30,7 +30,7 @@ class Page < ActiveRecord::Base
 ### Search ####
 
   class << self; attr_accessor :type; end
-  self.type = "À propos de LinuxFr.org"
+  self.type = "À propos de PiratesFr.org"
 
   include Tire::Model::Search
   include Tire::Model::Callbacks

@@ -41,7 +41,7 @@ class Section < ActiveRecord::Base
   end
 
   def self.default
-    where(:title => "LinuxFr.org").first
+    where(:title => "PiratesFr.org").first
   end
 
 end

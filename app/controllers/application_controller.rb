@@ -20,10 +20,10 @@ protected
     request.session_options[:secure] = request.ssl?
     headers["X-Served-By"] = Process.pid.to_s
     headers["X-Revision"]  = REVISION
-    @title         = %w(LinuxFr.org)
+    @title         = %w(PiratesFr.org)
     @author        = nil
-    @keywords      = %w(Linux Logiciel Libre GNU Free Software Actualité Forum Communauté)
-    @description   = "L'actualité du Logiciel Libre et de Linux, sur un site francophone contributif géré par une équipe bénévole par et pour des libristes enthousiastes"
+    @keywords      = %w(Pirates Politique Internet Liberté Actualité Forum Communauté)
+    @description   = "L'actualité des Pirates et de la politique pirate, sur un site francophone contributif géré par une équipe bénévole par et pour des pirates enthousiastes"
     @feeds         = {}
     @last_comments = Comment.footer
     @popular_tags  = Tag.footer

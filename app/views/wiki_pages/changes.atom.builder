@@ -1,5 +1,5 @@
 atom_feed(:root_url => wiki_pages_url) do |feed|
-  feed.title("LinuxFr.org : les derniers changements dans le wiki")
+  feed.title("PiratesFr.org : les derniers changements dans le wiki")
   feed.updated(@versions.first.created_at)
   feed.icon("/favicon.png")
 

@@ -18,9 +18,9 @@
 #  updated_at   :datetime
 #
 
-# The news are the first content in LinuxFr.org.
+# The news are the first content in PiratesFr.org.
 # Anonymous and authenticated users can submit a news
-# that will be reviewed and moderated by the LinuxFr.org team.
+# that will be reviewed and moderated by the PiratesFr.org team.
 #
 class News < Content
   self.table_name = "news"
