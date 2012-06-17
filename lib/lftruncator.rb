@@ -1,5 +1,5 @@
 # encoding: utf-8
-# LinuxFr Flavored Truncator
+# PiratesFr Flavored Truncator
 #
 class LFTruncator < HTML_Truncator
   DEFAULT_OPTIONS = { :ellipsis => "[...](suite)", :length_in_chars => false }

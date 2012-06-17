@@ -29,7 +29,7 @@ class Stylesheet < Struct.new(:name, :url, :image)
 
   def self.capture(url, cookies)
     dst = "tmp/snapshot_#{rand 1000}.png"
-    key = LinuxfrOrg::Application::COOKIE_STORE_KEY
+    key = PiratesfrOrg::Application::COOKIE_STORE_KEY
     val = cookies[key]
     Dir.chdir Rails.root.join("public") do
       timeout 30 do

@@ -14,7 +14,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module LinuxfrOrg
+module PiratesfrOrg
   class Application < Rails::Application
     config.generators do |g|
       g.template_engine  :haml

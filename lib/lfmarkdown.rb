@@ -3,9 +3,9 @@ require "albino"
 require "redcarpet"
 require "digest/sha1"
 
-# LinuxFr Flavored Markdown
+# PiratesFr Flavored Markdown
 #
-# LinuxFr used markdown as its wiki syntax, but with some differences with the
+# PiratesFr used markdown as its wiki syntax, but with some differences with the
 # standard markdown:
 #  * the heading levels for titles range from `<h2>` to `<h5>`
 #  * `[[Foobar]]` is transformed to a link to wikipedia (http://fr.wikipedia.org/wiki/Foobar)
@@ -87,7 +87,7 @@ protected
   WP_LINK_REGEXP = /\[\[([ '\.+:!\-\(\)\p{Word}]+)\]\]/
 
   def process_internal_wiki_links(text)
-    text.gsub!(LF_LINK_REGEXP, '[\1](/wiki/\1 "Lien du wiki interne LinuxFr.org")')
+    text.gsub!(LF_LINK_REGEXP, '[\1](/wiki/\1 "Lien du wiki interne PiratesFr.org")')
   end
 
   def process_wikipedia_links(text)

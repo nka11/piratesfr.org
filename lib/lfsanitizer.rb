@@ -1,7 +1,7 @@
 # encoding: utf-8
 require 'sanitize'
 
-# LinuxFr Flavord Sanitizer
+# PiratesFr Flavord Sanitizer
 #
 class LFSanitizer
   @@sanitizer = Sanitize.new(

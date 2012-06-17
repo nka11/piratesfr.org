@@ -17,7 +17,7 @@
 #  updated_at          :datetime
 #
 
-# There are no bugs in LinuxFr.org, but if it would happen,
+# There are no bugs in PiratesFr.org, but if it would happen,
 # the users can report them in the tracker.
 # They can also suggest improvements here.
 #

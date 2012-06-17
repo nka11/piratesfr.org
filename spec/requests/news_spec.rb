@@ -24,7 +24,7 @@ describe "News" do
   it "can be submitted" do
     get new_news_path
     fill_in :news_author_name, :with => "Pierre Tramo"
-    fill_in :news_author_email, :with => "pierre.tramo@dlfp.org"
+    fill_in :news_author_email, :with => "pierre.tramo@piratesfr.org"
     fill_in :news_title, :with => "J2EE is so cool"
     select section.title
     fill_in :news_wiki_body, :with => "Really, you should try it!"

@@ -9,7 +9,7 @@ shared = "#{cap_root}/shared"
 # 8 workers in production
 worker_processes (rails_env == 'production' ? 8 : 2)
 
-# Load rails+LinuxFr.org into the master before forking workers for super-fast worker spawn times
+# Load rails+PiratesFr.org into the master before forking workers for super-fast worker spawn times
 preload_app true
 
 # Restart any workers that haven't responded in 30 seconds
