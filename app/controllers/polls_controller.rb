@@ -35,7 +35,7 @@ class PollsController < ApplicationController
     @poll.attributes = params[:poll]
     @poll.tmp_owner_id = current_account.user_id
     if !preview_mode && @poll.save
-      redirect_to polls_url, :notice => "L'équipe de modération de LinuxFr.org vous remercie pour votre proposition de sondage"
+      redirect_to polls_url, :notice => "L'équipe de modération de PiratesFr.org vous remercie pour votre proposition de sondage"
     else
       @poll.node = Node.new
       @poll.valid?

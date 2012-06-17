@@ -5,6 +5,6 @@ FactoryGirl.define do
   end
 
   factory :default_section, :class => Section do
-    title "LinuxFr.org"
+    title "PiratesFr.org"
   end
 end

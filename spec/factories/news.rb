@@ -26,7 +26,7 @@ FactoryGirl.define do
     moderator
     section
     author_name "Pierre Tramo"
-    author_email "pierre.tramo@dlfp.org"
+    author_email "pierre.tramo@piratesfr.org"
     after_create do |n|
       n.node.public = true
       n.node.created_at = DateTime.now

@@ -20,7 +20,7 @@ FactoryGirl.define do
   factory :user do
     name      "Pierre Tramo"
     homesite  "http://java.sun.com/javaee/"
-    jabber_id "pierre.tramo@dlfp.org"
+    jabber_id "pierre.tramo@piratesfr.org"
     association :account, :factory => :normal_account
   end
 

@@ -70,7 +70,7 @@ class WikiPage < Content
 
 ### HomePage ###
 
-  HomePage = "LinuxFr.org"
+  HomePage = "PiratesFr.org"
   def self.home_page
     find_by_title(HomePage)
   end

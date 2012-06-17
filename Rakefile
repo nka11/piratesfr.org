@@ -5,4 +5,4 @@
 require "rake"
 require File.expand_path('../config/application', __FILE__)
 
-LinuxfrOrg::Application.load_tasks
+PiratesfrOrg::Application.load_tasks

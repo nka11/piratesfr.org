@@ -1,7 +1,7 @@
 # encoding: utf-8
 FactoryGirl.define do
   factory :wiki, :class => WikiPage do
-    title "Historique de LinuxFr.org"
+    title "Historique de PiratesFr.org"
     wiki_body "Quelques liens :\n\n* [[[Templeet]]]\n* [[[PierreTramo]]]\n"
     tmp_owner_id 1
     message "Draft"

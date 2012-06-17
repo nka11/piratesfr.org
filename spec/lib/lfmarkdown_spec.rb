@@ -25,7 +25,7 @@ describe LFMarkdown do
 
   it "transforms [[[]]] to internal wiki links" do
     html = LFMarkdown.render("[[[Linux]]]")
-    html.should == "<p><a href=\"/wiki/Linux\" title=\"Lien du wiki interne LinuxFr.org\">Linux</a></p>\n"
+    html.should == "<p><a href=\"/wiki/Linux\" title=\"Lien du wiki interne PiratesFr.org\">Linux</a></p>\n"
   end
 
   it "transforms [[]] to wikipedia links" do

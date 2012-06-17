@@ -30,7 +30,7 @@
 
 FactoryGirl.define do
   factory :account do
-    email { "#{login}@dlfp.org" }
+    email { "#{login}@piratesfr.org" }
     after_build { |a| a.skip_confirmation! }
 
     factory :normal_account do

@@ -170,7 +170,7 @@ class Board
   # There are several boards:
   #  * the free one for testing
   #  * the writing board is used for collaborating on the future news
-  #  * the AMR board is used by the LinuxFr.org staff
+  #  * the AMR board is used by the PiratesFr.org staff
   #  * and one board for each news in moderation.
   TYPES = %w(Free Writing AMR News)
 
