@@ -30,13 +30,14 @@ PiratesFr.org on a Debian box.
     > CREATE DATABASE piratesfr_rails;
     > GRANT ALL PRIVILEGES ON piratesfr_rails.* TO "piratesfr_rails"@"localhost";
     > CREATE DATABASE piratesfr_test;
-    > GRANT ALL PRIVILEGES ON piratesfr_test.* TO "piratesfr_rails"@"localhost";
+    > GRANT ALL PRIVILEGES ON piratesfr_test.* TO "piratesfr_test"@"localhost";
     > flush privileges;
     > DROP DATABASE piratesfr_rails;
     > DROP DATABASE piratesfr_test;
     > use mysql
     > update user set password=PASSWORD("NEW-PASSWORD-HERE") where User='piratesfr_rails"@"localhost';
-    > flush privileges;
+    > update user set password=PASSWORD("NEW-PASSWORD-HERE") where User='piratesfr_test"@"localhost';
+    > commit;
     > QUIT;
     (return to user)
 
@@ -75,7 +76,7 @@ PiratesFr.org on a Debian box.
     (if you're updating, you'll need an other step: redis-cli flushdb)
 
 7) Let's run it:
-
+bundle exec springboard -c config/elasticsearch
     $ bundle exec springboard -c config/elasticsearch
     $ bundle exec rails server thin
     $ x-www-browser http://127.0.0.1:3000/
@@ -97,6 +98,7 @@ See also
 If you want the full stack for running PiratesFr.org, you should also look at:
 
 * [The admin files](https://github.com/nka11/admin-piratesfr.org)
+
 -- in progress (not forked yet)
 * [The board daemon](https://github.com/nka11/board-sse-piratesfr.org)
 * [The share daemon](https://github.com/nka11/share-PiratesFr.org)
