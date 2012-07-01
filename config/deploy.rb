@@ -9,7 +9,7 @@ load 'deploy/assets'
 # Common options
 set :use_sudo,   false
 set :scm,        :git
-set :repository, "git://github.com/nono/piratesfr.org.git"
+set :repository, "git://github.com/nka11/piratesfr.org.git"
 set :deploy_via, :remote_cache
 
 default_run_options[:pty] = true
